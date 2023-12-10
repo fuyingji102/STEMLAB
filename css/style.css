@@ -2211,6 +2211,19 @@ body.homepage {
 body.homepage.scrolled{
   color: black;
 }
+/* 默认样式，适用于大屏幕（如桌面电脑） */
+.site-title {
+    font-size: 35px;
+    /* 其他样式 */
+}
+
+/* 媒体查询：当屏幕宽度小于600px时，适用于较小屏幕（如手机） */
+@media screen and (max-width: 600px) {
+    .site-title {
+        font-size: 20px; /* 较小屏幕的字体大小 */
+        /* 可以添加其他样式调整 */
+    }
+}
 
 
 
