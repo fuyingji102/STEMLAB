@@ -1,5 +1,5 @@
 [build]
-command = "npm ci && hugo --minify --gc -b $URL"
+command = "npm install && hugo --minify --gc -b $URL"
 publish = "public"
 
 [build.environment]
