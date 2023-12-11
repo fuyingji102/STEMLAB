@@ -2205,25 +2205,60 @@ figure figcaption {
   text-decoration: none;
   color: black;
 }
-body.homepage {
-  color: #ffffff;
-}
-body.homepage.scrolled{
-  color: black;
-}
-/* 默认样式，适用于大屏幕（如桌面电脑） */
-.site-title {
-    font-size: 35px;
-    /* 其他样式 */
+/* 默认状态下标题的样式 */
+.main-title {
+  color: #ffffff; /* 默认为白色 */
+  font-size: 35px; /* 默认字体大小，适用于大屏幕 */
 }
 
-/* 媒体查询：当屏幕宽度小于600px时，适用于较小屏幕（如手机） */
-@media screen and (max-width: 600px) {
-    .site-title {
-        font-size: 20px; /* 较小屏幕的字体大小 */
-        /* 可以添加其他样式调整 */
-    }
+/* 页面滚动后标题的样式 */
+body.scrolled .main-title {
+  color: black; /* 滚动后变为黑色 */
 }
+.main-text1 {
+  
+  font-size: 35px; /* 较小屏幕的字体大小 */
+}
+.main-text2 {
+
+  font-size: 30px; /* 较小屏幕的字体大小 */
+  
+}
+.row {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+}
+
+
+/* 在小屏幕上调整字体大小 */
+@media screen and (max-width: 600px) {
+  .main-title {
+      font-size: 20px; /* 较小屏幕的字体大小 */
+      margin-left: 0px; 
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-text1 {
+      font-size: 20px; /* 较小屏幕的字体大小 */
+  }
+}@media screen and (max-width: 600px) {
+  .main-text2 {
+      margin-top: 10px;
+      font-size: 20px; /* 较小屏幕的字体大小 */
+  }
+}
+.nav-logo {
+  width: 150px; /* 默认宽度 */
+  height: 150px; /* 保持图片的纵横比 */
+}
+
+@media screen and (max-width: 600px) {
+  .nav-logo {
+      width: 75px; /* 较小屏幕的宽度 */
+      height: 75px;
+  }
+}
+
 
 
 
